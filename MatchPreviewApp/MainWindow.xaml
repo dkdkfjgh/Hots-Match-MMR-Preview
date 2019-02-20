@@ -1,0 +1,60 @@
+﻿<Window x:Class="MatchPreviewApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MatchPreviewApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="500"
+        WindowStyle="None"
+        WindowStartupLocation="Manual"
+        AllowsTransparency="True"
+        Background="LightYellow" MouseDown="Window_MouseDown"
+        >
+    <Grid HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="500">
+        <Border BorderBrush="Blue" Background="LightBlue" BorderThickness="3" HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="250">
+            <Grid>
+                <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="78" VerticalAlignment="Top" Width="244" Margin="0,0,0,0">
+                    <Grid x:Name="PlayerBox01"/>
+                </Border>
+                <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="244" Margin="0,78,0,0">
+                    <Grid x:Name="PlayerBox02"/>
+                </Border>
+                <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="244" Margin="0,158,0,0">
+                    <Grid x:Name="PlayerBox03"/>
+                </Border>
+                <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="244" Margin="0,238,0,0">
+                    <Grid x:Name="PlayerBox04"/>
+                </Border>
+                <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="76" VerticalAlignment="Top" Width="244" Margin="0,318,0,0">
+                    <Grid x:Name="PlayerBox05"/>
+                </Border>
+            </Grid>
+
+        </Border>
+        <Border BorderBrush="Red" Background="LightPink" BorderThickness="3" HorizontalAlignment="Left" Height="400" Margin="250,0,0,0" VerticalAlignment="Top" Width="250">
+            <Grid>
+                <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="78" VerticalAlignment="Top" Width="244" Margin="0,0,0,0">
+                    <Grid x:Name="PlayerBox06"/>
+                </Border>
+                <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="244" Margin="0,78,0,0">
+                    <Grid x:Name="PlayerBox07"/>
+                </Border>
+                <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="244" Margin="0,158,0,0">
+                    <Grid x:Name="PlayerBox08"/>
+                </Border>
+                <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="244" Margin="0,238,0,0">
+                    <Grid x:Name="PlayerBox09"/>
+                </Border>
+                <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="76" VerticalAlignment="Top" Width="244" Margin="0,318,0,0">
+                    <Grid x:Name="PlayerBox10"/>
+                </Border>
+            </Grid>
+        </Border>
+        <Grid HorizontalAlignment="Left" Height="50" Margin="0,400,0,-50" VerticalAlignment="Top" Width="500">
+            <Button Content="지우기/초기화" HorizontalAlignment="Left" VerticalAlignment="Top" Width="500" Height="50" FontWeight="Bold" FontSize="20" Click="Button_Click"/>
+
+        </Grid>
+    </Grid>
+
+</Window>
